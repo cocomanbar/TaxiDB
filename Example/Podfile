@@ -1,0 +1,15 @@
+platform :ios, '10.0'
+
+target 'TaxiDB_Example' do
+  pod 'TaxiDB', :path => '../'
+  
+  pod 'MJExtension', '3.4.1'
+  pod 'FMDB', '2.7.5'
+  pod 'WCDB', '1.0.7.5'
+  
+  target 'TaxiDB_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

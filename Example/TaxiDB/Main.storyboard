@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C9Y-Pi-Ict">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="TXViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwu-GW-zwg">
+                                <rect key="frame" x="96.5" y="93" width="182" height="59"/>
+                                <color key="backgroundColor" red="0.3921568627" green="0.51764705879999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="75d-Ci-7LO"/>
+                                    <constraint firstAttribute="width" constant="182" id="9ah-0G-k0V"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="FMDB">
+                                    <color key="baseForegroundColor" red="0.20000000000000001" green="0.20392156859999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Asi-NZ-qgT" kind="push" id="9Lp-pE-ogD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhe-rV-G3g">
+                                <rect key="frame" x="96.5" y="187" width="182" height="59"/>
+                                <color key="backgroundColor" red="0.3921568627" green="0.51764705879999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="WCDB">
+                                    <color key="baseForegroundColor" red="0.20000000000000001" green="0.20392156859999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Xqy-fE-YEF" kind="push" id="96b-pt-ApT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nZ-6X-Y01">
+                                <rect key="frame" x="96.5" y="281" width="182" height="59"/>
+                                <color key="backgroundColor" red="0.3921568627" green="0.51764705879999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TaxiDB">
+                                    <color key="baseForegroundColor" red="0.20000000000000001" green="0.20392156859999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="4CV-ae-DCR" kind="push" id="bjt-vX-gYP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6nZ-6X-Y01" firstAttribute="height" secondItem="Nwu-GW-zwg" secondAttribute="height" id="1zS-hQ-3yN"/>
+                            <constraint firstItem="bhe-rV-G3g" firstAttribute="centerX" secondItem="Nwu-GW-zwg" secondAttribute="centerX" id="4yW-jT-usk"/>
+                            <constraint firstItem="6nZ-6X-Y01" firstAttribute="width" secondItem="Nwu-GW-zwg" secondAttribute="width" id="CfB-Xs-3sA"/>
+                            <constraint firstItem="bhe-rV-G3g" firstAttribute="width" secondItem="Nwu-GW-zwg" secondAttribute="width" id="GnL-qf-MKO"/>
+                            <constraint firstItem="6nZ-6X-Y01" firstAttribute="centerX" secondItem="bhe-rV-G3g" secondAttribute="centerX" id="JVd-6U-1vF"/>
+                            <constraint firstItem="6nZ-6X-Y01" firstAttribute="top" secondItem="bhe-rV-G3g" secondAttribute="bottom" constant="35" id="KHd-ic-ldA"/>
+                            <constraint firstItem="bhe-rV-G3g" firstAttribute="top" secondItem="Nwu-GW-zwg" secondAttribute="bottom" constant="35" id="Lsb-XY-cAy"/>
+                            <constraint firstItem="Nwu-GW-zwg" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="49" id="WPe-n7-SCB"/>
+                            <constraint firstItem="Nwu-GW-zwg" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="bMJ-8u-wHp"/>
+                            <constraint firstItem="bhe-rV-G3g" firstAttribute="height" secondItem="Nwu-GW-zwg" secondAttribute="height" id="fUd-Q4-qa1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Syv-sl-hlf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="432.23388305847078"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="obw-l3-Uxx">
+            <objects>
+                <viewController id="Xqy-fE-YEF" customClass="WCDBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rsO-29-IEA"/>
+                        <viewControllerLayoutGuide type="bottom" id="nrm-UU-XDE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nKn-ab-I26">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYE-hO-ZT0">
+                                <rect key="frame" x="90" y="188" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="DMC-NX-yLw"/>
+                                    <constraint firstAttribute="height" constant="44" id="VYg-YW-N2Z"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="插入"/>
+                                <connections>
+                                    <action selector="insert:" destination="Xqy-fE-YEF" eventType="touchUpInside" id="NwT-hY-Tk0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuf-HN-A6E">
+                                <rect key="frame" x="90" y="124" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="K62-qn-36a"/>
+                                    <constraint firstAttribute="width" constant="195" id="qrR-6O-ABr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="建表"/>
+                                <connections>
+                                    <action selector="create:" destination="Xqy-fE-YEF" eventType="touchUpInside" id="AvS-qQ-4t6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3P-Cc-G4f">
+                                <rect key="frame" x="90" y="252" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4vQ-Rq-rBj"/>
+                                    <constraint firstAttribute="width" constant="195" id="Kl0-4r-zCm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="查询"/>
+                                <connections>
+                                    <action selector="search:" destination="Xqy-fE-YEF" eventType="touchUpInside" id="dgV-bW-ezJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esg-pF-fkd">
+                                <rect key="frame" x="90" y="316" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="I4e-l3-bhk"/>
+                                    <constraint firstAttribute="height" constant="44" id="qWW-hK-L1t"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="查询全部"/>
+                                <connections>
+                                    <action selector="searchAll:" destination="Xqy-fE-YEF" eventType="touchUpInside" id="GhI-Qp-wzW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPD-N7-Vwv">
+                                <rect key="frame" x="90" y="572" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="8fD-pL-rEA"/>
+                                    <constraint firstAttribute="height" constant="44" id="V6Q-uY-86M"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="删除全部"/>
+                                <connections>
+                                    <action selector="deleteAll:" destination="Xqy-fE-YEF" eventType="touchUpInside" id="bDi-4r-QrG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVg-i6-WsW">
+                                <rect key="frame" x="90" y="380" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="9ww-ij-Y3X"/>
+                                    <constraint firstAttribute="height" constant="44" id="gJA-hl-r91"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="更新"/>
+                                <connections>
+                                    <action selector="update:" destination="Xqy-fE-YEF" eventType="touchUpInside" id="3ZB-Cq-c7R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afw-pE-8iJ">
+                                <rect key="frame" x="90" y="444" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="Ck7-Gt-8GI"/>
+                                    <constraint firstAttribute="height" constant="44" id="K34-Hv-6g6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="更新全部"/>
+                                <connections>
+                                    <action selector="updateAll:" destination="Xqy-fE-YEF" eventType="touchUpInside" id="mnf-BK-Iy0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GQ-zg-CNa">
+                                <rect key="frame" x="90" y="508" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="82E-CO-oBy"/>
+                                    <constraint firstAttribute="height" constant="44" id="kqr-Hk-d58"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="删除"/>
+                                <connections>
+                                    <action selector="delete:" destination="Xqy-fE-YEF" eventType="touchUpInside" id="Tvj-om-RvD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="afw-pE-8iJ" firstAttribute="centerX" secondItem="OYE-hO-ZT0" secondAttribute="centerX" id="1PK-l9-H9W"/>
+                            <constraint firstItem="OYE-hO-ZT0" firstAttribute="top" secondItem="Wuf-HN-A6E" secondAttribute="bottom" constant="20" id="1fq-yA-FPO"/>
+                            <constraint firstItem="NPD-N7-Vwv" firstAttribute="centerX" secondItem="OYE-hO-ZT0" secondAttribute="centerX" id="3pi-iy-6jr"/>
+                            <constraint firstItem="W3P-Cc-G4f" firstAttribute="top" secondItem="OYE-hO-ZT0" secondAttribute="bottom" constant="20" id="5Zi-qD-SU2"/>
+                            <constraint firstItem="Wuf-HN-A6E" firstAttribute="top" secondItem="rsO-29-IEA" secondAttribute="bottom" constant="80" id="7No-oF-DkD"/>
+                            <constraint firstItem="VVg-i6-WsW" firstAttribute="top" secondItem="Esg-pF-fkd" secondAttribute="bottom" constant="20" id="Crf-nI-p0V"/>
+                            <constraint firstItem="NPD-N7-Vwv" firstAttribute="top" secondItem="3GQ-zg-CNa" secondAttribute="bottom" constant="20" id="HUa-Zu-HOx"/>
+                            <constraint firstItem="afw-pE-8iJ" firstAttribute="top" secondItem="VVg-i6-WsW" secondAttribute="bottom" constant="20" id="MWX-JK-f4W"/>
+                            <constraint firstItem="VVg-i6-WsW" firstAttribute="centerX" secondItem="OYE-hO-ZT0" secondAttribute="centerX" id="PXv-IH-Xcx"/>
+                            <constraint firstItem="3GQ-zg-CNa" firstAttribute="centerX" secondItem="OYE-hO-ZT0" secondAttribute="centerX" id="RbW-wb-Nil"/>
+                            <constraint firstItem="Wuf-HN-A6E" firstAttribute="centerX" secondItem="nKn-ab-I26" secondAttribute="centerX" id="ZLs-dC-2jd"/>
+                            <constraint firstItem="3GQ-zg-CNa" firstAttribute="top" secondItem="afw-pE-8iJ" secondAttribute="bottom" constant="20" id="Zv7-zd-VDX"/>
+                            <constraint firstItem="W3P-Cc-G4f" firstAttribute="centerX" secondItem="OYE-hO-ZT0" secondAttribute="centerX" id="lYT-Wj-4h8"/>
+                            <constraint firstItem="Esg-pF-fkd" firstAttribute="top" secondItem="W3P-Cc-G4f" secondAttribute="bottom" constant="20" id="mF8-E1-Kjz"/>
+                            <constraint firstItem="Esg-pF-fkd" firstAttribute="centerX" secondItem="OYE-hO-ZT0" secondAttribute="centerX" id="sTl-MF-V8F"/>
+                            <constraint firstItem="OYE-hO-ZT0" firstAttribute="centerX" secondItem="Wuf-HN-A6E" secondAttribute="centerX" id="zVI-0g-rR8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1nE-ZX-sVh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryj-Np-DDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2383" y="107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8dL-eD-erA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C9Y-Pi-Ict" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ANc-gx-O5e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="j2F-y3-ZrI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAw-WL-JYn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fd1-Z7-aeA">
+            <objects>
+                <viewController id="Asi-NZ-qgT" customClass="FMDBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1AT-rO-wce"/>
+                        <viewControllerLayoutGuide type="bottom" id="FZB-cb-aqk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g9k-5E-oo5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGc-jl-eN8">
+                                <rect key="frame" x="90" y="188" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ivS-cb-LHE"/>
+                                    <constraint firstAttribute="width" constant="195" id="qFZ-gA-UFc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="插入"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1E8-os-zpW">
+                                <rect key="frame" x="90" y="124" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="feD-IT-02K"/>
+                                    <constraint firstAttribute="width" constant="195" id="irp-vA-iBO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="建表"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRF-AT-Otb">
+                                <rect key="frame" x="90" y="252" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hgz-kF-d1y"/>
+                                    <constraint firstAttribute="width" constant="195" id="voM-XJ-CdQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="查询"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXa-tb-wHb">
+                                <rect key="frame" x="90" y="316" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dnw-JC-2t0"/>
+                                    <constraint firstAttribute="width" constant="195" id="rUZ-On-TcA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="查询全部"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41O-z3-xSX">
+                                <rect key="frame" x="90" y="572" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nFx-z9-9YR"/>
+                                    <constraint firstAttribute="width" constant="195" id="nMK-K7-oy4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="删除全部"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCJ-Gy-UTB">
+                                <rect key="frame" x="90" y="380" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ERM-w6-YjD"/>
+                                    <constraint firstAttribute="width" constant="195" id="ioF-Fl-jh2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="更新"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe2-aJ-T9v">
+                                <rect key="frame" x="90" y="444" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="JJu-Eg-MAG"/>
+                                    <constraint firstAttribute="height" constant="44" id="VbF-tq-r0F"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="更新全部"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8C-JU-ZTV">
+                                <rect key="frame" x="90" y="508" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="4fn-x8-JBr"/>
+                                    <constraint firstAttribute="height" constant="44" id="u1S-Yh-rBa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="删除"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pe2-aJ-T9v" firstAttribute="top" secondItem="UCJ-Gy-UTB" secondAttribute="bottom" constant="20" id="0Wv-iR-wIP"/>
+                            <constraint firstItem="zRF-AT-Otb" firstAttribute="top" secondItem="lGc-jl-eN8" secondAttribute="bottom" constant="20" id="0co-vU-l6C"/>
+                            <constraint firstItem="E8C-JU-ZTV" firstAttribute="top" secondItem="pe2-aJ-T9v" secondAttribute="bottom" constant="20" id="6s8-O8-Gha"/>
+                            <constraint firstItem="1E8-os-zpW" firstAttribute="top" secondItem="1AT-rO-wce" secondAttribute="bottom" constant="80" id="Grk-Ig-crF"/>
+                            <constraint firstItem="lGc-jl-eN8" firstAttribute="centerX" secondItem="1E8-os-zpW" secondAttribute="centerX" id="IvD-i2-nQz"/>
+                            <constraint firstItem="lGc-jl-eN8" firstAttribute="top" secondItem="1E8-os-zpW" secondAttribute="bottom" constant="20" id="Jf2-8d-ghm"/>
+                            <constraint firstItem="zRF-AT-Otb" firstAttribute="centerX" secondItem="lGc-jl-eN8" secondAttribute="centerX" id="S2D-kF-heg"/>
+                            <constraint firstItem="UCJ-Gy-UTB" firstAttribute="top" secondItem="pXa-tb-wHb" secondAttribute="bottom" constant="20" id="TEa-Vx-hqj"/>
+                            <constraint firstItem="UCJ-Gy-UTB" firstAttribute="centerX" secondItem="lGc-jl-eN8" secondAttribute="centerX" id="YNF-GD-6h9"/>
+                            <constraint firstItem="E8C-JU-ZTV" firstAttribute="centerX" secondItem="lGc-jl-eN8" secondAttribute="centerX" id="ZPI-rH-Ea3"/>
+                            <constraint firstItem="41O-z3-xSX" firstAttribute="centerX" secondItem="lGc-jl-eN8" secondAttribute="centerX" id="dvw-xF-sms"/>
+                            <constraint firstItem="pXa-tb-wHb" firstAttribute="centerX" secondItem="lGc-jl-eN8" secondAttribute="centerX" id="p7L-Gr-1qb"/>
+                            <constraint firstItem="1E8-os-zpW" firstAttribute="centerX" secondItem="g9k-5E-oo5" secondAttribute="centerX" id="ryc-Ww-FV9"/>
+                            <constraint firstItem="pXa-tb-wHb" firstAttribute="top" secondItem="zRF-AT-Otb" secondAttribute="bottom" constant="20" id="tFO-lw-0wx"/>
+                            <constraint firstItem="pe2-aJ-T9v" firstAttribute="centerX" secondItem="lGc-jl-eN8" secondAttribute="centerX" id="uuk-IG-uj4"/>
+                            <constraint firstItem="41O-z3-xSX" firstAttribute="top" secondItem="E8C-JU-ZTV" secondAttribute="bottom" constant="20" id="ya1-Er-tjJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UrW-yC-0bQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNM-PR-Xnx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="1227"/>
+        </scene>
+        <!--TaxiDB View Controller-->
+        <scene sceneID="MgE-4U-seG">
+            <objects>
+                <viewController id="4CV-ae-DCR" customClass="TaxiDBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dUb-k3-pF5"/>
+                        <viewControllerLayoutGuide type="bottom" id="ran-md-ykN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cp0-r8-2VL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCX-Z2-IIg">
+                                <rect key="frame" x="90" y="188" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="Jes-ID-pCK"/>
+                                    <constraint firstAttribute="height" constant="44" id="VZY-48-dx0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="插入"/>
+                                <connections>
+                                    <action selector="insert:" destination="4CV-ae-DCR" eventType="touchUpInside" id="EoH-SJ-2ik"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laP-Q1-ENW">
+                                <rect key="frame" x="90" y="124" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="dDT-6U-AgZ"/>
+                                    <constraint firstAttribute="height" constant="44" id="lRe-2W-gD4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="建表"/>
+                                <connections>
+                                    <action selector="create:" destination="4CV-ae-DCR" eventType="touchUpInside" id="Kbu-7e-r96"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b47-L9-2OR">
+                                <rect key="frame" x="90" y="252" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="IV8-Hz-ha3"/>
+                                    <constraint firstAttribute="height" constant="44" id="bLX-OD-JO9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="查询"/>
+                                <connections>
+                                    <action selector="search:" destination="4CV-ae-DCR" eventType="touchUpInside" id="8ep-vU-1Ki"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llk-yM-SFo">
+                                <rect key="frame" x="90" y="316" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="2cY-Ob-jb3"/>
+                                    <constraint firstAttribute="height" constant="44" id="Jln-aB-hep"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="查询全部"/>
+                                <connections>
+                                    <action selector="searchAll:" destination="4CV-ae-DCR" eventType="touchUpInside" id="fQF-z5-Hoz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tm8-Ln-jgn">
+                                <rect key="frame" x="90" y="572" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="6fP-xh-WE1"/>
+                                    <constraint firstAttribute="height" constant="44" id="PHV-ER-rST"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="删除全部"/>
+                                <connections>
+                                    <action selector="deleteAll:" destination="4CV-ae-DCR" eventType="touchUpInside" id="Ydn-qW-3bQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZC-Z6-n9h">
+                                <rect key="frame" x="90" y="380" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="UOL-LW-m1S"/>
+                                    <constraint firstAttribute="height" constant="44" id="mlE-zX-nsY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="更新"/>
+                                <connections>
+                                    <action selector="update:" destination="4CV-ae-DCR" eventType="touchUpInside" id="xlS-iH-RjM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlK-rk-ELS">
+                                <rect key="frame" x="90" y="444" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="QPL-8f-1KW"/>
+                                    <constraint firstAttribute="height" constant="44" id="k1y-4a-HFc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="更新全部"/>
+                                <connections>
+                                    <action selector="updateAll:" destination="4CV-ae-DCR" eventType="touchUpInside" id="T6o-RG-KFy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEP-Hl-ltW">
+                                <rect key="frame" x="90" y="508" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Zps-NW-sCQ"/>
+                                    <constraint firstAttribute="width" constant="195" id="iMx-Q4-JoI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="删除"/>
+                                <connections>
+                                    <action selector="delete:" destination="4CV-ae-DCR" eventType="touchUpInside" id="LT9-rT-7fn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Llk-yM-SFo" firstAttribute="top" secondItem="b47-L9-2OR" secondAttribute="bottom" constant="20" id="9lG-40-M52"/>
+                            <constraint firstItem="tm8-Ln-jgn" firstAttribute="centerX" secondItem="bCX-Z2-IIg" secondAttribute="centerX" id="Fec-IS-rCp"/>
+                            <constraint firstItem="JEP-Hl-ltW" firstAttribute="centerX" secondItem="bCX-Z2-IIg" secondAttribute="centerX" id="JDr-5x-Z8k"/>
+                            <constraint firstItem="laP-Q1-ENW" firstAttribute="centerX" secondItem="cp0-r8-2VL" secondAttribute="centerX" id="Jxt-w1-6uI"/>
+                            <constraint firstItem="laP-Q1-ENW" firstAttribute="top" secondItem="dUb-k3-pF5" secondAttribute="bottom" constant="80" id="MfG-eH-JOo"/>
+                            <constraint firstItem="bCX-Z2-IIg" firstAttribute="top" secondItem="laP-Q1-ENW" secondAttribute="bottom" constant="20" id="Raa-s9-ODC"/>
+                            <constraint firstItem="Llk-yM-SFo" firstAttribute="centerX" secondItem="bCX-Z2-IIg" secondAttribute="centerX" id="VDh-18-DfN"/>
+                            <constraint firstItem="b47-L9-2OR" firstAttribute="top" secondItem="bCX-Z2-IIg" secondAttribute="bottom" constant="20" id="XKB-cG-TsO"/>
+                            <constraint firstItem="DZC-Z6-n9h" firstAttribute="centerX" secondItem="bCX-Z2-IIg" secondAttribute="centerX" id="YNj-by-cN8"/>
+                            <constraint firstItem="BlK-rk-ELS" firstAttribute="top" secondItem="DZC-Z6-n9h" secondAttribute="bottom" constant="20" id="dlT-s7-ACh"/>
+                            <constraint firstItem="bCX-Z2-IIg" firstAttribute="centerX" secondItem="laP-Q1-ENW" secondAttribute="centerX" id="e6U-E3-q3u"/>
+                            <constraint firstItem="DZC-Z6-n9h" firstAttribute="top" secondItem="Llk-yM-SFo" secondAttribute="bottom" constant="20" id="eYB-F3-Foe"/>
+                            <constraint firstItem="JEP-Hl-ltW" firstAttribute="top" secondItem="BlK-rk-ELS" secondAttribute="bottom" constant="20" id="klF-dl-agd"/>
+                            <constraint firstItem="b47-L9-2OR" firstAttribute="centerX" secondItem="bCX-Z2-IIg" secondAttribute="centerX" id="qhu-jf-IuP"/>
+                            <constraint firstItem="BlK-rk-ELS" firstAttribute="centerX" secondItem="bCX-Z2-IIg" secondAttribute="centerX" id="v5f-Mo-DzQ"/>
+                            <constraint firstItem="tm8-Ln-jgn" firstAttribute="top" secondItem="JEP-Hl-ltW" secondAttribute="bottom" constant="20" id="zvN-wm-ivj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qUt-9e-cep"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4h-02-LRC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2382" y="830"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
