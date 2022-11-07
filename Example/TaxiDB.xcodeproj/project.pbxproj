@@ -24,9 +24,11 @@
 		61B5CDBB2916034E004775AA /* WCDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5CDBA2916034E004775AA /* WCDBViewController.m */; };
 		61B5CDC1291606D5004775AA /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5CDC0291606D5004775AA /* FMDBViewController.m */; };
 		61B5CDC4291606E6004775AA /* TaxiDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5CDC3291606E6004775AA /* TaxiDBViewController.m */; };
-		61B5CDC72916092D004775AA /* Orange.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5CDC62916092D004775AA /* Orange.m */; };
 		61B5CDFF2917E532004775AA /* TaxiUpdateVersionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5CDFE2917E532004775AA /* TaxiUpdateVersionViewController.m */; };
 		61B5CE022917E54A004775AA /* TaxiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5CE012917E54A004775AA /* TaxiModel.m */; };
+		61B5CE0A29193354004775AA /* TXLFMDBManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5CE0929193354004775AA /* TXLFMDBManagement.m */; };
+		61B5CE0D29193413004775AA /* tomato.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61B5CE0C29193413004775AA /* tomato.mm */; };
+		61B5CE1129193448004775AA /* tomato+wcdb.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61B5CE1029193448004775AA /* tomato+wcdb.mm */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		F5506BFBAD648E14D00C873C /* libPods-TaxiDB_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A002C597A62F5481FDFB7C /* libPods-TaxiDB_Tests.a */; };
@@ -69,12 +71,17 @@
 		61B5CDC0291606D5004775AA /* FMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
 		61B5CDC2291606E6004775AA /* TaxiDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaxiDBViewController.h; sourceTree = "<group>"; };
 		61B5CDC3291606E6004775AA /* TaxiDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaxiDBViewController.m; sourceTree = "<group>"; };
-		61B5CDC52916092D004775AA /* Orange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Orange.h; sourceTree = "<group>"; };
-		61B5CDC62916092D004775AA /* Orange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Orange.m; sourceTree = "<group>"; };
 		61B5CDFD2917E532004775AA /* TaxiUpdateVersionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaxiUpdateVersionViewController.h; sourceTree = "<group>"; };
 		61B5CDFE2917E532004775AA /* TaxiUpdateVersionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaxiUpdateVersionViewController.m; sourceTree = "<group>"; };
 		61B5CE002917E54A004775AA /* TaxiModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaxiModel.h; sourceTree = "<group>"; };
 		61B5CE012917E54A004775AA /* TaxiModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaxiModel.m; sourceTree = "<group>"; };
+		61B5CE0829193354004775AA /* TXLFMDBManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXLFMDBManagement.h; sourceTree = "<group>"; };
+		61B5CE0929193354004775AA /* TXLFMDBManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXLFMDBManagement.m; sourceTree = "<group>"; };
+		61B5CE0B29193413004775AA /* tomato.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tomato.h; sourceTree = "<group>"; };
+		61B5CE0C29193413004775AA /* tomato.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = tomato.mm; sourceTree = "<group>"; };
+		61B5CE0E29193434004775AA /* tomato+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tomato+WCTTableCoding.h"; sourceTree = "<group>"; };
+		61B5CE0F29193448004775AA /* tomato+wcdb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tomato+wcdb.h"; sourceTree = "<group>"; };
+		61B5CE1029193448004775AA /* tomato+wcdb.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "tomato+wcdb.mm"; sourceTree = "<group>"; };
 		69A002C597A62F5481FDFB7C /* libPods-TaxiDB_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaxiDB_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73A09399E09EFFC089AA711D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -219,8 +226,11 @@
 			children = (
 				61B5CDB92916034E004775AA /* WCDBViewController.h */,
 				61B5CDBA2916034E004775AA /* WCDBViewController.m */,
-				61B5CDC52916092D004775AA /* Orange.h */,
-				61B5CDC62916092D004775AA /* Orange.m */,
+				61B5CE0B29193413004775AA /* tomato.h */,
+				61B5CE0C29193413004775AA /* tomato.mm */,
+				61B5CE0E29193434004775AA /* tomato+WCTTableCoding.h */,
+				61B5CE0F29193448004775AA /* tomato+wcdb.h */,
+				61B5CE1029193448004775AA /* tomato+wcdb.mm */,
 			);
 			path = wcdb;
 			sourceTree = "<group>";
@@ -228,6 +238,7 @@
 		61B5CDBD291606AE004775AA /* fmdb */ = {
 			isa = PBXGroup;
 			children = (
+				61B5CE042917FF6A004775AA /* TaxiFMDB */,
 				61B5CDBF291606D5004775AA /* FMDBViewController.h */,
 				61B5CDC0291606D5004775AA /* FMDBViewController.m */,
 			);
@@ -245,6 +256,15 @@
 				61B5CE012917E54A004775AA /* TaxiModel.m */,
 			);
 			path = taxidb;
+			sourceTree = "<group>";
+		};
+		61B5CE042917FF6A004775AA /* TaxiFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				61B5CE0829193354004775AA /* TXLFMDBManagement.h */,
+				61B5CE0929193354004775AA /* TXLFMDBManagement.m */,
+			);
+			path = TaxiFMDB;
 			sourceTree = "<group>";
 		};
 		966C2F903DB75A3A6BF6AA64 /* Pods */ = {
@@ -408,14 +428,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B5CDC4291606E6004775AA /* TaxiDBViewController.m in Sources */,
-				61B5CDC72916092D004775AA /* Orange.m in Sources */,
 				6003F59E195388D20070C39A /* TXAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* TXViewController.m in Sources */,
 				61B5CE022917E54A004775AA /* TaxiModel.m in Sources */,
 				61B5CDC1291606D5004775AA /* FMDBViewController.m in Sources */,
+				61B5CE1129193448004775AA /* tomato+wcdb.mm in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				61B5CDFF2917E532004775AA /* TaxiUpdateVersionViewController.m in Sources */,
+				61B5CE0A29193354004775AA /* TXLFMDBManagement.m in Sources */,
 				61B5CDBB2916034E004775AA /* WCDBViewController.m in Sources */,
+				61B5CE0D29193413004775AA /* tomato.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +569,10 @@
 				GCC_PREFIX_HEADER = "TaxiDB/TaxiDB-Prefix.pch";
 				INFOPLIST_FILE = "TaxiDB/TaxiDB-Info.plist";
 				MODULE_NAME = ExampleApp;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -563,6 +589,10 @@
 				GCC_PREFIX_HEADER = "TaxiDB/TaxiDB-Prefix.pch";
 				INFOPLIST_FILE = "TaxiDB/TaxiDB-Info.plist";
 				MODULE_NAME = ExampleApp;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
