@@ -1,0 +1,23 @@
+PODS:
+  - Masonry (1.1.0)
+  - TaxiDB (1.0.0)
+
+DEPENDENCIES:
+  - Masonry
+  - TaxiDB (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  TaxiDB:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  TaxiDB: 5676aaee8297ea30189859d7f87c8c630826e7fa
+
+PODFILE CHECKSUM: c06cb42567be3fd63da6f4518f7898edd77352c3
+
+COCOAPODS: 1.11.3

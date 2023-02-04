@@ -1,0 +1,992 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011DEAEC47C5802504A51B75A1AC15D9 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8160CD72114EFF3597CD4BF6F7F1F7 /* MASViewConstraint.m */; };
+		01B3E548FDFA68BC57259A5670AD98A2 /* TaxiDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5BEA5E8EAEBE727E6CABBCD8BB7586 /* TaxiDatabase.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01D5FBC350E24AD4BF493C0AF742E47E /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C8E52D0D54D9FDA8B5EE9BC43560E445 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		08625518F0392BC28031A88EE6CB1E32 /* TaxiTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF49DBB79AE3434DEFA9EC9BEE19BA9 /* TaxiTable.m */; };
+		147494E198F69A38542578EFCB3C0476 /* TaxiLimitDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = D297D9B809AD7E945AE88117EEB7200B /* TaxiLimitDescription.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E714AAA494C42D5245C673E576E11B4 /* TaxiLane.m in Sources */ = {isa = PBXBuildFile; fileRef = 43672D397CE4C81D762EE2C9DE599E07 /* TaxiLane.m */; };
+		217A152B5B3CD99D8DBD2EB0B011FBC9 /* TaxiLimitDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D85EDF8FC03EAF60CFC5DA9CEA56AE /* TaxiLimitDescription.m */; };
+		21D63BE4A2AF1ED0C277DF8196B0DEC3 /* TaxiCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C5DC432DA644733AE8D20EFE422BCF /* TaxiCondition.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A79F8350987891611F2E13358709D36 /* TaxiDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F51727974F937525DAE2377AE17298 /* TaxiDatabaseQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		315D46FF1A0C17B45A0A39C84D6EFFC7 /* TaxiTable+TaxiDB.h in Headers */ = {isa = PBXBuildFile; fileRef = D81268A54AF1E89A0C5ED3E220DE07B0 /* TaxiTable+TaxiDB.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		35A12203C5DAF8DB36E22D334D04F84A /* TaxiTable.h in Headers */ = {isa = PBXBuildFile; fileRef = A4267B15D2343F57776D38F5C31C407B /* TaxiTable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		379902484CC10B58ACBD21D949702DC1 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 64C2B405D244ABC4F0728546D75B2D86 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		387523916AB680AC722992079BB01F67 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AA01142B191C535B620A7D90F8B79380 /* MASLayoutConstraint.m */; };
+		3933249068DBFA07448F0B231E1AA8B4 /* TaxiDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 253F46A4B4223A0B522F027345ACA5C3 /* TaxiDB.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3AF45D1B033D1A4B64453248E928BC36 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA0898FAC44183744D557073E2F8AA5 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3B749B0DA006A8EC75B9F9D0765EBE6F /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56AA7AF365E444271F9F4BE178D5A0 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		42E543C6C23AF4792D82D23CAC723C12 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BA9F847C587E22F8DD9250EDEC7CDA /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		44F7EC646FD40441539872AC5C388F7F /* TaxiUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 42468E2B6A654A6F7F3C08070C3C92BC /* TaxiUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		457516E4EEE536D0D40BD90D79E5ADDD /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 935171CB319C057FAEE8F843F46825FE /* MASConstraintMaker.m */; };
+		473C7AC00E6245D98749AF805187FA96 /* TaxiOrderDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A503112971CB1EDCC04C4A85C4CA527 /* TaxiOrderDescription.m */; };
+		4CF36156B28BDB5F3DEF8D754895EEAB /* NSObject+TaxiDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C9B544BA4638229FA1FD0C07139ACC6 /* NSObject+TaxiDB.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55EFB2BF787AEEC1910F86B31FA02826 /* TaxiWhereDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD651AE1EE12E5ED6B702CE154FF186 /* TaxiWhereDescription.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B69D1990B47F180CAAEE3D5A29A13D1 /* TaxiDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBA7517997576CF23F71D762F10E739 /* TaxiDB-dummy.m */; };
+		5D50C92481B31B9177A0C3E8737F5DC4 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB3725D2C0052C8143BF229622340A /* NSArray+MASAdditions.m */; };
+		6136EC0D688FFE6DB0BD9FC6E9663AEE /* Pods-TaxiDB_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB84C236AFB374C322899E045C8EC57 /* Pods-TaxiDB_Example-dummy.m */; };
+		704E6E494A06EA86348E495BBF3C0590 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 49AC5D4983C8BEF841BBE185811C5FB0 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E59F5700B0E8F0310801C689631E20E /* TaxiCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A68A9099A4030A383C569218DD5F8 /* TaxiCondition.m */; };
+		827971675DDE1BD225031B3F3C89450B /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 411CCCE6A707DDA02AF236A6F4DD8B74 /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		843A14508DBBE2100B31FDBA28A0A06C /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1660D370806B3EFD74C49D3471C1C /* MASViewAttribute.m */; };
+		87ACDF930ECA3C65D213D88EF3FC86D5 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0AEA8F34CAE43AA76247FF577BAA68 /* MASCompositeConstraint.m */; };
+		8C1C666EA02E741AF806D028D8760E7F /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEBAAA2225352CFA3BA703D5C21510 /* Masonry-dummy.m */; };
+		99626E8F5686EB830D21F97B1A313A67 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 587E0B8E883D6AD4B29DA2365B8C2EFA /* View+MASAdditions.m */; };
+		9B9D5BF5A9583E295E2DC177F33044E5 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 72A1A97E52C283A47BA4E8F48BC313FB /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ACE2A764A690E0B8F53FF47E1F4EFB32 /* TaxiDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C42BA7F03FD33DC429E636006D918DA9 /* TaxiDatabase.m */; };
+		ACE84EB117EDD90B79AF71B105CCCBD9 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C44599FE7C1C51F94F910C9C3E7827 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5A554A58864D6E2001008C8FB5264C9 /* TaxiWhereDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64D1E651A08BE854926D6AA64A1BDE /* TaxiWhereDescription.m */; };
+		C97C168990B403304F906B181907D718 /* TaxiDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E85882B753E24B2F2AFE2713457F7E /* TaxiDatabaseQueue.m */; };
+		CB191345BCC56C623BB5B802261183A7 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EFED6E52B374EE53B8B532C8A65A293 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB68C5F4AD3107402F58C7A84E359712 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A301E9D7640CAAE872D2257184D64010 /* MASConstraint.m */; };
+		CCF0D6DEDFF375F49226978DB974BCCC /* TaxiOrderDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = B4063B97A8029B244250E555D22C3672 /* TaxiOrderDescription.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CD12B6AC301CC6D3E89D64742EADC39F /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 45892546416F43C43E8AA0E2AA27BC95 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CD4705DFF4EAD79C185405829F187A22 /* TaxiStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 23D6FBBC1D65A72BF53CB544B86DB5B8 /* TaxiStatement.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D282CD515ECB4D344D99048D72F2186D /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 558B2763E324B8D237D904287AE7A690 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D43380309815EEA67C52B47B4DE0A025 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8967E66A2FCB5BA81BFA1E139139A237 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D580FB1B556530B3F3DBADBD964C7B51 /* TaxiTable+TaxiDB.m in Sources */ = {isa = PBXBuildFile; fileRef = B74F5FD7694191DF267C5DE500CF41B9 /* TaxiTable+TaxiDB.m */; };
+		D94606FD6932B455C44EDAE275073C9F /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 370F325DDBF27B3EF280D0011A024B35 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E2111F7B9950A10407775009D5400C5C /* TaxiStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = DA92DA90D651F0C2AC99FB6052E18DA2 /* TaxiStatement.m */; };
+		EED53C68F9C39F555916114C73F5FB98 /* TaxiField.m in Sources */ = {isa = PBXBuildFile; fileRef = 000EF738EBF38098D64E680E8754FDDB /* TaxiField.m */; };
+		F12EB7DF51A64F59A4D4DF3D69E4A5AF /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A9244EA17B6E04FACE497603F0088190 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F511304006F9BA79AC954C36C3B898AA /* Pods-TaxiDB_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343D76A912CDF088C81CC8397DC39BF /* Pods-TaxiDB_Tests-dummy.m */; };
+		F5E3F423DC9EE494E1DE3B1D8522D798 /* TaxiField.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D485DCA1370E82189B338C5735F103 /* TaxiField.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB359B040B808D198EC431F6FE2F0938 /* TaxiLane.h in Headers */ = {isa = PBXBuildFile; fileRef = 11457E2AFB6372EF560A5EA69858241A /* TaxiLane.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FCCB37EC60603CEAD240176E003B1730 /* NSObject+TaxiDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E75FC2EE6D41ED884DC5B1A716C3AFBA /* NSObject+TaxiDB.m */; };
+		FD2B7DCBE9FCBBB7044804478E7ABD18 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB032F0BEDBBDDF91030E59ACA7DC98 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		FD515EA00C1136C86B78FC74C9C1ACAF /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 553DA097256D24886D70E33FBA786911 /* ViewController+MASAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A353CAF5E9B2BABDF152B5FA5881434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F685504A8AF47C54749659C85A84F1B4;
+			remoteInfo = TaxiDB;
+		};
+		9BF49988D9274D8589CB6FEE577D8863 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		C2FCCB1CA4A4FDA99C66D43849BE4026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FD6C5DC57BD57D2C4FC17A9EB150B6;
+			remoteInfo = "Pods-TaxiDB_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000EF738EBF38098D64E680E8754FDDB /* TaxiField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TaxiField.m; path = TaxiDB/Classes/TaxiField.m; sourceTree = "<group>"; };
+		0343D76A912CDF088C81CC8397DC39BF /* Pods-TaxiDB_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaxiDB_Tests-dummy.m"; sourceTree = "<group>"; };
+		0654A27EC928843FB3544DB618766641 /* TaxiDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaxiDB-prefix.pch"; sourceTree = "<group>"; };
+		0B64D1E651A08BE854926D6AA64A1BDE /* TaxiWhereDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TaxiWhereDescription.m; path = TaxiDB/Classes/TaxiWhereDescription.m; sourceTree = "<group>"; };
+		0CD651AE1EE12E5ED6B702CE154FF186 /* TaxiWhereDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiWhereDescription.h; path = TaxiDB/Classes/TaxiWhereDescription.h; sourceTree = "<group>"; };
+		0D0AEA8F34CAE43AA76247FF577BAA68 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		11457E2AFB6372EF560A5EA69858241A /* TaxiLane.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiLane.h; path = TaxiDB/Classes/TaxiLane.h; sourceTree = "<group>"; };
+		16AEBAAA2225352CFA3BA703D5C21510 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		1CBA7517997576CF23F71D762F10E739 /* TaxiDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TaxiDB-dummy.m"; sourceTree = "<group>"; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Masonry; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D6FBBC1D65A72BF53CB544B86DB5B8 /* TaxiStatement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiStatement.h; path = TaxiDB/Classes/TaxiStatement.h; sourceTree = "<group>"; };
+		248A68A9099A4030A383C569218DD5F8 /* TaxiCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TaxiCondition.m; path = TaxiDB/Classes/TaxiCondition.m; sourceTree = "<group>"; };
+		24D85EDF8FC03EAF60CFC5DA9CEA56AE /* TaxiLimitDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TaxiLimitDescription.m; path = TaxiDB/Classes/TaxiLimitDescription.m; sourceTree = "<group>"; };
+		253F46A4B4223A0B522F027345ACA5C3 /* TaxiDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiDB.h; path = TaxiDB/Classes/TaxiDB.h; sourceTree = "<group>"; };
+		2916FD6BC3D85947DCBD524E845EC5CF /* TaxiDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TaxiDB.debug.xcconfig; sourceTree = "<group>"; };
+		2F8160CD72114EFF3597CD4BF6F7F1F7 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		370F325DDBF27B3EF280D0011A024B35 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3A45AB655F7B22797F7432A655C93E2F /* TaxiDB */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = TaxiDB; path = libTaxiDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		411CCCE6A707DDA02AF236A6F4DD8B74 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		42468E2B6A654A6F7F3C08070C3C92BC /* TaxiUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiUtilities.h; path = TaxiDB/Classes/TaxiUtilities.h; sourceTree = "<group>"; };
+		43672D397CE4C81D762EE2C9DE599E07 /* TaxiLane.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TaxiLane.m; path = TaxiDB/Classes/TaxiLane.m; sourceTree = "<group>"; };
+		44AEC6462659DC0098D6E58E0470E73F /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
+		45892546416F43C43E8AA0E2AA27BC95 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		49AC5D4983C8BEF841BBE185811C5FB0 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		4C9B544BA4638229FA1FD0C07139ACC6 /* NSObject+TaxiDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TaxiDB.h"; path = "TaxiDB/Classes/NSObject+TaxiDB.h"; sourceTree = "<group>"; };
+		553DA097256D24886D70E33FBA786911 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		558B2763E324B8D237D904287AE7A690 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		587E0B8E883D6AD4B29DA2365B8C2EFA /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		58E85882B753E24B2F2AFE2713457F7E /* TaxiDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TaxiDatabaseQueue.m; path = TaxiDB/Classes/TaxiDatabaseQueue.m; sourceTree = "<group>"; };
+		5DB032F0BEDBBDDF91030E59ACA7DC98 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		5EFED6E52B374EE53B8B532C8A65A293 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		64C2B405D244ABC4F0728546D75B2D86 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		64F51727974F937525DAE2377AE17298 /* TaxiDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiDatabaseQueue.h; path = TaxiDB/Classes/TaxiDatabaseQueue.h; sourceTree = "<group>"; };
+		67BC92D7E90FA084EDCEBCF59E795EBF /* Pods-TaxiDB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaxiDB_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6FBB3725D2C0052C8143BF229622340A /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		72A1A97E52C283A47BA4E8F48BC313FB /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		72D98643BA30A79011275CBE433EF86F /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
+		79A52AE7D177CEE1A271EB36594E9DC9 /* Pods-TaxiDB_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaxiDB_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7A503112971CB1EDCC04C4A85C4CA527 /* TaxiOrderDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TaxiOrderDescription.m; path = TaxiDB/Classes/TaxiOrderDescription.m; sourceTree = "<group>"; };
+		7EE1660D370806B3EFD74C49D3471C1C /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		81D485DCA1370E82189B338C5735F103 /* TaxiField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiField.h; path = TaxiDB/Classes/TaxiField.h; sourceTree = "<group>"; };
+		8967E66A2FCB5BA81BFA1E139139A237 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		8A0FBAD1C918465E34AD54B383AE2192 /* Pods-TaxiDB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaxiDB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BA0898FAC44183744D557073E2F8AA5 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		8E3DD7A15C1B234685BAEFF659598DFB /* Pods-TaxiDB_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaxiDB_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		91F10A7E4BAA437E4DF7B3CED9B560B4 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		91F10B6A477C200F80B7D51A5D756173 /* Pods-TaxiDB_Example */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-TaxiDB_Example"; path = "libPods-TaxiDB_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		935171CB319C057FAEE8F843F46825FE /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		9C9C26FA9962AF0F1E78708E93672315 /* Pods-TaxiDB_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaxiDB_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A301E9D7640CAAE872D2257184D64010 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		A4267B15D2343F57776D38F5C31C407B /* TaxiTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiTable.h; path = TaxiDB/Classes/TaxiTable.h; sourceTree = "<group>"; };
+		A9244EA17B6E04FACE497603F0088190 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		AA01142B191C535B620A7D90F8B79380 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		AA56AA7AF365E444271F9F4BE178D5A0 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		ACF49DBB79AE3434DEFA9EC9BEE19BA9 /* TaxiTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TaxiTable.m; path = TaxiDB/Classes/TaxiTable.m; sourceTree = "<group>"; };
+		B4063B97A8029B244250E555D22C3672 /* TaxiOrderDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiOrderDescription.h; path = TaxiDB/Classes/TaxiOrderDescription.h; sourceTree = "<group>"; };
+		B4B39DB1D3EFB996C2EF79527343574C /* Pods-TaxiDB_Tests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-TaxiDB_Tests"; path = "libPods-TaxiDB_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D41AD0DB3D13C0E554E66ADD89AFC4 /* Pods-TaxiDB_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaxiDB_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B74F5FD7694191DF267C5DE500CF41B9 /* TaxiTable+TaxiDB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TaxiTable+TaxiDB.m"; path = "TaxiDB/Classes/TaxiTable+TaxiDB.m"; sourceTree = "<group>"; };
+		C42BA7F03FD33DC429E636006D918DA9 /* TaxiDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TaxiDatabase.m; path = TaxiDB/Classes/TaxiDatabase.m; sourceTree = "<group>"; };
+		C5C44599FE7C1C51F94F910C9C3E7827 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		C87A23A9F49155F53881B02CC956CCF6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C8E52D0D54D9FDA8B5EE9BC43560E445 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		CDB84C236AFB374C322899E045C8EC57 /* Pods-TaxiDB_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaxiDB_Example-dummy.m"; sourceTree = "<group>"; };
+		D297D9B809AD7E945AE88117EEB7200B /* TaxiLimitDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiLimitDescription.h; path = TaxiDB/Classes/TaxiLimitDescription.h; sourceTree = "<group>"; };
+		D5BA9F847C587E22F8DD9250EDEC7CDA /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		D64C11AA2A0446A9734A9D443236EE62 /* TaxiDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TaxiDB.release.xcconfig; sourceTree = "<group>"; };
+		D75B39D8E1D271BEA56D93E7E2A936DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D81268A54AF1E89A0C5ED3E220DE07B0 /* TaxiTable+TaxiDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TaxiTable+TaxiDB.h"; path = "TaxiDB/Classes/TaxiTable+TaxiDB.h"; sourceTree = "<group>"; };
+		D9EE53B97B1126E5CF5586F5294C1522 /* Pods-TaxiDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaxiDB_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DA5BEA5E8EAEBE727E6CABBCD8BB7586 /* TaxiDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiDatabase.h; path = TaxiDB/Classes/TaxiDatabase.h; sourceTree = "<group>"; };
+		DA92DA90D651F0C2AC99FB6052E18DA2 /* TaxiStatement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TaxiStatement.m; path = TaxiDB/Classes/TaxiStatement.m; sourceTree = "<group>"; };
+		DE5CBE900116FDAB63D2077DCA6C4484 /* TaxiDB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TaxiDB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E7261BD912BCBAA7C092F4239C0CC7AC /* Pods-TaxiDB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaxiDB_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E75FC2EE6D41ED884DC5B1A716C3AFBA /* NSObject+TaxiDB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TaxiDB.m"; path = "TaxiDB/Classes/NSObject+TaxiDB.m"; sourceTree = "<group>"; };
+		F2C5DC432DA644733AE8D20EFE422BCF /* TaxiCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TaxiCondition.h; path = TaxiDB/Classes/TaxiCondition.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		907AD26A9F98C723CE396A46535B55F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921315EE729AF0F20EFC1E611CD616C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B087078332BBB8BF99E2555C2EDA32E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0D478FC862F57B1FBCA5F71760AB0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13531DE887D6E16FF6276E81A2B274FE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D75B39D8E1D271BEA56D93E7E2A936DF /* LICENSE */,
+				C87A23A9F49155F53881B02CC956CCF6 /* README.md */,
+				DE5CBE900116FDAB63D2077DCA6C4484 /* TaxiDB.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		152F7A2D704AF280DC4B848C11578176 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B357E741D9234AA617B267DF136AF75 /* TaxiDB */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		32887033F9D96E526766B3A5665DC406 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CBA7517997576CF23F71D762F10E739 /* TaxiDB-dummy.m */,
+				0654A27EC928843FB3544DB618766641 /* TaxiDB-prefix.pch */,
+				2916FD6BC3D85947DCBD524E845EC5CF /* TaxiDB.debug.xcconfig */,
+				D64C11AA2A0446A9734A9D443236EE62 /* TaxiDB.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TaxiDB";
+			sourceTree = "<group>";
+		};
+		4357C9F6652A94DC2CBCC1A30010EE33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16AEBAAA2225352CFA3BA703D5C21510 /* Masonry-dummy.m */,
+				91F10A7E4BAA437E4DF7B3CED9B560B4 /* Masonry-prefix.pch */,
+				72D98643BA30A79011275CBE433EF86F /* Masonry.debug.xcconfig */,
+				44AEC6462659DC0098D6E58E0470E73F /* Masonry.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		4802E810DBCA6251172B4BEDC95C2B42 /* Pods-TaxiDB_Example */ = {
+			isa = PBXGroup;
+			children = (
+				8E3DD7A15C1B234685BAEFF659598DFB /* Pods-TaxiDB_Example-acknowledgements.markdown */,
+				9C9C26FA9962AF0F1E78708E93672315 /* Pods-TaxiDB_Example-acknowledgements.plist */,
+				CDB84C236AFB374C322899E045C8EC57 /* Pods-TaxiDB_Example-dummy.m */,
+				67BC92D7E90FA084EDCEBCF59E795EBF /* Pods-TaxiDB_Example.debug.xcconfig */,
+				D9EE53B97B1126E5CF5586F5294C1522 /* Pods-TaxiDB_Example.release.xcconfig */,
+			);
+			name = "Pods-TaxiDB_Example";
+			path = "Target Support Files/Pods-TaxiDB_Example";
+			sourceTree = "<group>";
+		};
+		6B357E741D9234AA617B267DF136AF75 /* TaxiDB */ = {
+			isa = PBXGroup;
+			children = (
+				4C9B544BA4638229FA1FD0C07139ACC6 /* NSObject+TaxiDB.h */,
+				E75FC2EE6D41ED884DC5B1A716C3AFBA /* NSObject+TaxiDB.m */,
+				F2C5DC432DA644733AE8D20EFE422BCF /* TaxiCondition.h */,
+				248A68A9099A4030A383C569218DD5F8 /* TaxiCondition.m */,
+				DA5BEA5E8EAEBE727E6CABBCD8BB7586 /* TaxiDatabase.h */,
+				C42BA7F03FD33DC429E636006D918DA9 /* TaxiDatabase.m */,
+				64F51727974F937525DAE2377AE17298 /* TaxiDatabaseQueue.h */,
+				58E85882B753E24B2F2AFE2713457F7E /* TaxiDatabaseQueue.m */,
+				253F46A4B4223A0B522F027345ACA5C3 /* TaxiDB.h */,
+				81D485DCA1370E82189B338C5735F103 /* TaxiField.h */,
+				000EF738EBF38098D64E680E8754FDDB /* TaxiField.m */,
+				11457E2AFB6372EF560A5EA69858241A /* TaxiLane.h */,
+				43672D397CE4C81D762EE2C9DE599E07 /* TaxiLane.m */,
+				D297D9B809AD7E945AE88117EEB7200B /* TaxiLimitDescription.h */,
+				24D85EDF8FC03EAF60CFC5DA9CEA56AE /* TaxiLimitDescription.m */,
+				B4063B97A8029B244250E555D22C3672 /* TaxiOrderDescription.h */,
+				7A503112971CB1EDCC04C4A85C4CA527 /* TaxiOrderDescription.m */,
+				23D6FBBC1D65A72BF53CB544B86DB5B8 /* TaxiStatement.h */,
+				DA92DA90D651F0C2AC99FB6052E18DA2 /* TaxiStatement.m */,
+				A4267B15D2343F57776D38F5C31C407B /* TaxiTable.h */,
+				ACF49DBB79AE3434DEFA9EC9BEE19BA9 /* TaxiTable.m */,
+				D81268A54AF1E89A0C5ED3E220DE07B0 /* TaxiTable+TaxiDB.h */,
+				B74F5FD7694191DF267C5DE500CF41B9 /* TaxiTable+TaxiDB.m */,
+				42468E2B6A654A6F7F3C08070C3C92BC /* TaxiUtilities.h */,
+				0CD651AE1EE12E5ED6B702CE154FF186 /* TaxiWhereDescription.h */,
+				0B64D1E651A08BE854926D6AA64A1BDE /* TaxiWhereDescription.m */,
+				13531DE887D6E16FF6276E81A2B274FE /* Pod */,
+				32887033F9D96E526766B3A5665DC406 /* Support Files */,
+			);
+			name = TaxiDB;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		715B54D5E8762F537398932F53F66963 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4802E810DBCA6251172B4BEDC95C2B42 /* Pods-TaxiDB_Example */,
+				A1B4C1C7520FB96C15178CA5D0DE33DE /* Pods-TaxiDB_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7529FD53BCE26816CCD46658378AAF1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F47FDAAE8298DEBC98D156CFA4146C99 /* Masonry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78D227581EC508F4BB68C027B494812A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FFED36A657123030ABB700256D73F15 /* Masonry */,
+				91F10B6A477C200F80B7D51A5D756173 /* Pods-TaxiDB_Example */,
+				B4B39DB1D3EFB996C2EF79527343574C /* Pods-TaxiDB_Tests */,
+				3A45AB655F7B22797F7432A655C93E2F /* TaxiDB */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B4C1C7520FB96C15178CA5D0DE33DE /* Pods-TaxiDB_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D41AD0DB3D13C0E554E66ADD89AFC4 /* Pods-TaxiDB_Tests-acknowledgements.markdown */,
+				79A52AE7D177CEE1A271EB36594E9DC9 /* Pods-TaxiDB_Tests-acknowledgements.plist */,
+				0343D76A912CDF088C81CC8397DC39BF /* Pods-TaxiDB_Tests-dummy.m */,
+				8A0FBAD1C918465E34AD54B383AE2192 /* Pods-TaxiDB_Tests.debug.xcconfig */,
+				E7261BD912BCBAA7C092F4239C0CC7AC /* Pods-TaxiDB_Tests.release.xcconfig */,
+			);
+			name = "Pods-TaxiDB_Tests";
+			path = "Target Support Files/Pods-TaxiDB_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				152F7A2D704AF280DC4B848C11578176 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				7529FD53BCE26816CCD46658378AAF1B /* Pods */,
+				78D227581EC508F4BB68C027B494812A /* Products */,
+				715B54D5E8762F537398932F53F66963 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F47FDAAE8298DEBC98D156CFA4146C99 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				558B2763E324B8D237D904287AE7A690 /* MASCompositeConstraint.h */,
+				0D0AEA8F34CAE43AA76247FF577BAA68 /* MASCompositeConstraint.m */,
+				411CCCE6A707DDA02AF236A6F4DD8B74 /* MASConstraint.h */,
+				A301E9D7640CAAE872D2257184D64010 /* MASConstraint.m */,
+				D5BA9F847C587E22F8DD9250EDEC7CDA /* MASConstraint+Private.h */,
+				72A1A97E52C283A47BA4E8F48BC313FB /* MASConstraintMaker.h */,
+				935171CB319C057FAEE8F843F46825FE /* MASConstraintMaker.m */,
+				C8E52D0D54D9FDA8B5EE9BC43560E445 /* MASLayoutConstraint.h */,
+				AA01142B191C535B620A7D90F8B79380 /* MASLayoutConstraint.m */,
+				45892546416F43C43E8AA0E2AA27BC95 /* Masonry.h */,
+				5EFED6E52B374EE53B8B532C8A65A293 /* MASUtilities.h */,
+				49AC5D4983C8BEF841BBE185811C5FB0 /* MASViewAttribute.h */,
+				7EE1660D370806B3EFD74C49D3471C1C /* MASViewAttribute.m */,
+				A9244EA17B6E04FACE497603F0088190 /* MASViewConstraint.h */,
+				2F8160CD72114EFF3597CD4BF6F7F1F7 /* MASViewConstraint.m */,
+				8967E66A2FCB5BA81BFA1E139139A237 /* NSArray+MASAdditions.h */,
+				6FBB3725D2C0052C8143BF229622340A /* NSArray+MASAdditions.m */,
+				C5C44599FE7C1C51F94F910C9C3E7827 /* NSArray+MASShorthandAdditions.h */,
+				AA56AA7AF365E444271F9F4BE178D5A0 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				5DB032F0BEDBBDDF91030E59ACA7DC98 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				64C2B405D244ABC4F0728546D75B2D86 /* View+MASAdditions.h */,
+				587E0B8E883D6AD4B29DA2365B8C2EFA /* View+MASAdditions.m */,
+				370F325DDBF27B3EF280D0011A024B35 /* View+MASShorthandAdditions.h */,
+				8BA0898FAC44183744D557073E2F8AA5 /* ViewController+MASAdditions.h */,
+				553DA097256D24886D70E33FBA786911 /* ViewController+MASAdditions.m */,
+				4357C9F6652A94DC2CBCC1A30010EE33 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A3EBFC0646B1C38B42A258D68224E28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D282CD515ECB4D344D99048D72F2186D /* MASCompositeConstraint.h in Headers */,
+				827971675DDE1BD225031B3F3C89450B /* MASConstraint.h in Headers */,
+				42E543C6C23AF4792D82D23CAC723C12 /* MASConstraint+Private.h in Headers */,
+				9B9D5BF5A9583E295E2DC177F33044E5 /* MASConstraintMaker.h in Headers */,
+				01D5FBC350E24AD4BF493C0AF742E47E /* MASLayoutConstraint.h in Headers */,
+				CD12B6AC301CC6D3E89D64742EADC39F /* Masonry.h in Headers */,
+				CB191345BCC56C623BB5B802261183A7 /* MASUtilities.h in Headers */,
+				704E6E494A06EA86348E495BBF3C0590 /* MASViewAttribute.h in Headers */,
+				F12EB7DF51A64F59A4D4DF3D69E4A5AF /* MASViewConstraint.h in Headers */,
+				D43380309815EEA67C52B47B4DE0A025 /* NSArray+MASAdditions.h in Headers */,
+				ACE84EB117EDD90B79AF71B105CCCBD9 /* NSArray+MASShorthandAdditions.h in Headers */,
+				3B749B0DA006A8EC75B9F9D0765EBE6F /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				379902484CC10B58ACBD21D949702DC1 /* View+MASAdditions.h in Headers */,
+				D94606FD6932B455C44EDAE275073C9F /* View+MASShorthandAdditions.h in Headers */,
+				3AF45D1B033D1A4B64453248E928BC36 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F798497FF7BE777897F3F9B2E0047A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19F3C88026D1162162872133FC191D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF36156B28BDB5F3DEF8D754895EEAB /* NSObject+TaxiDB.h in Headers */,
+				21D63BE4A2AF1ED0C277DF8196B0DEC3 /* TaxiCondition.h in Headers */,
+				01B3E548FDFA68BC57259A5670AD98A2 /* TaxiDatabase.h in Headers */,
+				2A79F8350987891611F2E13358709D36 /* TaxiDatabaseQueue.h in Headers */,
+				3933249068DBFA07448F0B231E1AA8B4 /* TaxiDB.h in Headers */,
+				F5E3F423DC9EE494E1DE3B1D8522D798 /* TaxiField.h in Headers */,
+				FB359B040B808D198EC431F6FE2F0938 /* TaxiLane.h in Headers */,
+				147494E198F69A38542578EFCB3C0476 /* TaxiLimitDescription.h in Headers */,
+				CCF0D6DEDFF375F49226978DB974BCCC /* TaxiOrderDescription.h in Headers */,
+				CD4705DFF4EAD79C185405829F187A22 /* TaxiStatement.h in Headers */,
+				35A12203C5DAF8DB36E22D334D04F84A /* TaxiTable.h in Headers */,
+				315D46FF1A0C17B45A0A39C84D6EFFC7 /* TaxiTable+TaxiDB.h in Headers */,
+				44F7EC646FD40441539872AC5C388F7F /* TaxiUtilities.h in Headers */,
+				55EFB2BF787AEEC1910F86B31FA02826 /* TaxiWhereDescription.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00C54FCC93DFE3BDCC0FDC27D8B9CA7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		497965D0693DCDA9C8681324E7E57965 /* Pods-TaxiDB_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 600AE4134DA80C518C38877488ADF86C /* Build configuration list for PBXNativeTarget "Pods-TaxiDB_Tests" */;
+			buildPhases = (
+				E00C54FCC93DFE3BDCC0FDC27D8B9CA7 /* Headers */,
+				39038DED2C81BAB0CDC3A066658F029F /* Sources */,
+				FF0D478FC862F57B1FBCA5F71760AB0E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292045FA680D0C4AAC582432103A3806 /* PBXTargetDependency */,
+			);
+			name = "Pods-TaxiDB_Tests";
+			productName = "Pods-TaxiDB_Tests";
+			productReference = B4B39DB1D3EFB996C2EF79527343574C /* Pods-TaxiDB_Tests */;
+			productType = "com.apple.product-type.library.static";
+		};
+		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6525CCFB5FEEBC36FDDE16A88CD85B83 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				2A3EBFC0646B1C38B42A258D68224E28 /* Headers */,
+				375FDB568BC4E6D5E37AEEA9CD7D77A6 /* Sources */,
+				907AD26A9F98C723CE396A46535B55F5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* Masonry */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B5FD6C5DC57BD57D2C4FC17A9EB150B6 /* Pods-TaxiDB_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45AC54762E3506BD1CBB40D963F1E6FC /* Build configuration list for PBXNativeTarget "Pods-TaxiDB_Example" */;
+			buildPhases = (
+				31F798497FF7BE777897F3F9B2E0047A /* Headers */,
+				A387844A96FA99651EA4EA654FD271BC /* Sources */,
+				921315EE729AF0F20EFC1E611CD616C9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				262EA6650D76111F8E89D1139B3E70A3 /* PBXTargetDependency */,
+				40BF4D878C26874A451BE62177BF5CAC /* PBXTargetDependency */,
+			);
+			name = "Pods-TaxiDB_Example";
+			productName = "Pods-TaxiDB_Example";
+			productReference = 91F10B6A477C200F80B7D51A5D756173 /* Pods-TaxiDB_Example */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F685504A8AF47C54749659C85A84F1B4 /* TaxiDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5F7359EF0E61AB3463BE3B0FE28F7B /* Build configuration list for PBXNativeTarget "TaxiDB" */;
+			buildPhases = (
+				A19F3C88026D1162162872133FC191D0 /* Headers */,
+				B8898705F9F7D8DDC110AED68EDA30AC /* Sources */,
+				B087078332BBB8BF99E2555C2EDA32E9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaxiDB;
+			productName = TaxiDB;
+			productReference = 3A45AB655F7B22797F7432A655C93E2F /* TaxiDB */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 78D227581EC508F4BB68C027B494812A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
+				B5FD6C5DC57BD57D2C4FC17A9EB150B6 /* Pods-TaxiDB_Example */,
+				497965D0693DCDA9C8681324E7E57965 /* Pods-TaxiDB_Tests */,
+				F685504A8AF47C54749659C85A84F1B4 /* TaxiDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		375FDB568BC4E6D5E37AEEA9CD7D77A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87ACDF930ECA3C65D213D88EF3FC86D5 /* MASCompositeConstraint.m in Sources */,
+				CB68C5F4AD3107402F58C7A84E359712 /* MASConstraint.m in Sources */,
+				457516E4EEE536D0D40BD90D79E5ADDD /* MASConstraintMaker.m in Sources */,
+				387523916AB680AC722992079BB01F67 /* MASLayoutConstraint.m in Sources */,
+				8C1C666EA02E741AF806D028D8760E7F /* Masonry-dummy.m in Sources */,
+				843A14508DBBE2100B31FDBA28A0A06C /* MASViewAttribute.m in Sources */,
+				011DEAEC47C5802504A51B75A1AC15D9 /* MASViewConstraint.m in Sources */,
+				5D50C92481B31B9177A0C3E8737F5DC4 /* NSArray+MASAdditions.m in Sources */,
+				FD2B7DCBE9FCBBB7044804478E7ABD18 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				99626E8F5686EB830D21F97B1A313A67 /* View+MASAdditions.m in Sources */,
+				FD515EA00C1136C86B78FC74C9C1ACAF /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39038DED2C81BAB0CDC3A066658F029F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F511304006F9BA79AC954C36C3B898AA /* Pods-TaxiDB_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A387844A96FA99651EA4EA654FD271BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6136EC0D688FFE6DB0BD9FC6E9663AEE /* Pods-TaxiDB_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8898705F9F7D8DDC110AED68EDA30AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCB37EC60603CEAD240176E003B1730 /* NSObject+TaxiDB.m in Sources */,
+				7E59F5700B0E8F0310801C689631E20E /* TaxiCondition.m in Sources */,
+				ACE2A764A690E0B8F53FF47E1F4EFB32 /* TaxiDatabase.m in Sources */,
+				C97C168990B403304F906B181907D718 /* TaxiDatabaseQueue.m in Sources */,
+				5B69D1990B47F180CAAEE3D5A29A13D1 /* TaxiDB-dummy.m in Sources */,
+				EED53C68F9C39F555916114C73F5FB98 /* TaxiField.m in Sources */,
+				1E714AAA494C42D5245C673E576E11B4 /* TaxiLane.m in Sources */,
+				217A152B5B3CD99D8DBD2EB0B011FBC9 /* TaxiLimitDescription.m in Sources */,
+				473C7AC00E6245D98749AF805187FA96 /* TaxiOrderDescription.m in Sources */,
+				E2111F7B9950A10407775009D5400C5C /* TaxiStatement.m in Sources */,
+				08625518F0392BC28031A88EE6CB1E32 /* TaxiTable.m in Sources */,
+				D580FB1B556530B3F3DBADBD964C7B51 /* TaxiTable+TaxiDB.m in Sources */,
+				B5A554A58864D6E2001008C8FB5264C9 /* TaxiWhereDescription.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		262EA6650D76111F8E89D1139B3E70A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 9BF49988D9274D8589CB6FEE577D8863 /* PBXContainerItemProxy */;
+		};
+		292045FA680D0C4AAC582432103A3806 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TaxiDB_Example";
+			target = B5FD6C5DC57BD57D2C4FC17A9EB150B6 /* Pods-TaxiDB_Example */;
+			targetProxy = C2FCCB1CA4A4FDA99C66D43849BE4026 /* PBXContainerItemProxy */;
+		};
+		40BF4D878C26874A451BE62177BF5CAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TaxiDB;
+			target = F685504A8AF47C54749659C85A84F1B4 /* TaxiDB */;
+			targetProxy = 1A353CAF5E9B2BABDF152B5FA5881434 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7628E77745F1D49AFC8EBD35E28DC1EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44AEC6462659DC0098D6E58E0470E73F /* Masonry.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E289D344C3C400279EFDA37922CFA79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0FBAD1C918465E34AD54B383AE2192 /* Pods-TaxiDB_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B3F137BA162F41D3EFE517438F967D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7261BD912BCBAA7C092F4239C0CC7AC /* Pods-TaxiDB_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4068596FCE13B2E699E9DFD1C08026B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D64C11AA2A0446A9734A9D443236EE62 /* TaxiDB.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TaxiDB/TaxiDB-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TaxiDB;
+				PRODUCT_NAME = TaxiDB;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C02329919DD2F068C343CA81C9347FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D98643BA30A79011275CBE433EF86F /* Masonry.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE3449D76EB4ACEEBE2909B343301761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EE53B97B1126E5CF5586F5294C1522 /* Pods-TaxiDB_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F34AC9954A44760AF8849FAAE1E8B0BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67BC92D7E90FA084EDCEBCF59E795EBF /* Pods-TaxiDB_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFF65756402E5594A758A99C492BD60F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2916FD6BC3D85947DCBD524E845EC5CF /* TaxiDB.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TaxiDB/TaxiDB-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TaxiDB;
+				PRODUCT_NAME = TaxiDB;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45AC54762E3506BD1CBB40D963F1E6FC /* Build configuration list for PBXNativeTarget "Pods-TaxiDB_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34AC9954A44760AF8849FAAE1E8B0BA /* Debug */,
+				CE3449D76EB4ACEEBE2909B343301761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B5F7359EF0E61AB3463BE3B0FE28F7B /* Build configuration list for PBXNativeTarget "TaxiDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF65756402E5594A758A99C492BD60F /* Debug */,
+				B4068596FCE13B2E699E9DFD1C08026B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		600AE4134DA80C518C38877488ADF86C /* Build configuration list for PBXNativeTarget "Pods-TaxiDB_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E289D344C3C400279EFDA37922CFA79 /* Debug */,
+				B3F137BA162F41D3EFE517438F967D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6525CCFB5FEEBC36FDDE16A88CD85B83 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02329919DD2F068C343CA81C9347FA4 /* Debug */,
+				7628E77745F1D49AFC8EBD35E28DC1EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
